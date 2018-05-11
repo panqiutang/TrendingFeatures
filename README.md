@@ -28,7 +28,7 @@ If users would like to use ReviewMiner with customized categories of products, d
 
 Test case:     1. download package and unzip laptops.zip in the package folder
 
-               2. ./read.py laptops ./laptops
+               2. ./read.py laptops .
 
                3. ./processes.py laptops
 

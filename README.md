@@ -2,6 +2,7 @@ Overview:
 
 Review Miner: Trending Feature Analyzer is a tool that helps users identify the most trendy features of a product in each of the recent years. This Trending Feature Analyzer includes five categories of products’ trendy features in past ten years. Users can simply selected desired category and view the results summarized in a table. This analyzer also support user customized data input by taking command line arguments. To use this software with customized category, a JSON file containing reviews and time information will be required.
 
+
 Usage:
 
 --Regular usage:
@@ -9,6 +10,7 @@ Usage:
 1. Run ui.py
 
 2. Choose a category of products from the drop down menu, a table with trending features of the selected category of products over time will be displayed.
+
 
 --Extended usage:
 
@@ -24,7 +26,7 @@ If users would like to use ReviewMiner with customized categories of products, d
 
 4. Run ui.py with command: ./ui.py [-category]
 
-Test case: 1. download package and unzip laptops.zip in the package folder
+Test case:     1. download package and unzip laptops.zip in the package folder
 
                2. ./read.py laptops ./laptops
 
@@ -33,6 +35,9 @@ Test case: 1. download package and unzip laptops.zip in the package folder
                4. ./features.py laptops
 
                5. ./ui.py laptops
+               
+               
+               
 
 Implementation:
 

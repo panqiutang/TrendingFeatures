@@ -16,7 +16,7 @@ Usage:
 
 If users would like to use ReviewMiner with customized categories of products, dataset with time and reviews in JSON format will be needed.
 
-1. Run read.py with command : ./read.py [-category] [--path to JSON file]
+1. Run read.py with command : ./read.py [-category] [--path to reviews JSON folder]
 
 (Note path is an optional arg, if the JSON file is already in default folder, i.e. AmazonReviews, path is not necessary)
 

@@ -20,7 +20,7 @@ If users would like to use ReviewMiner with customized categories of products, d
 
 (Note path is an optional arg, if the JSON file is already in default folder, i.e. AmazonReviews, path is not necessary)
 
-2. Run process.py with command: ./process.py [-category]
+2. Run processes.py with command: ./processes.py [-category]
 
 3. Run features.py with command: ./features.py [-category]
 
@@ -30,7 +30,7 @@ Test case:     1. download package and unzip laptops.zip in the package folder
 
                2. ./read.py laptops ./laptops
 
-               3. ./process.py laptops
+               3. ./processes.py laptops
 
                4. ./features.py laptops
 
@@ -45,7 +45,7 @@ Implementation:
 
 2. For each category, we parse the JSON and separate the reviews by year. This step corresponds to the code in read.py. This step also supports reading and parsing file from user-customized file path and category.
 
-3. By taking user specified category as an input, process.py performs LDA on each year’s review data of the selected category. We use Gensim library in this step.
+3. By taking user specified category as an input, processes.py performs LDA on each year’s review data of the selected category. We use Gensim library in this step.
 
 4. In features.py, we defined our filter_words list, which is used to filter out frequent words with no meaningful information in reviews. This list serves the similar purpose as stop words list, but stop words removing is done before performing LDA. This list is created after examining our dataset. For general dataset and analysis, words that expressing personal opinion may be important and not removed when perform top modelling. However, for the purpose of analyzing the trending features products from reviews, words such as “love, like, great, good, bad” may not indicate any feature of the product despite showing strong personal preference of the users.   
 
